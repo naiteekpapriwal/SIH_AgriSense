@@ -1,0 +1,271 @@
+/opt/miniconda3/lib/python3.13/site-packages/torch/utils/data/dataloader.py:1102: UserWarning: 'pin_memory' argument is set as true but not supported on MPS now, device pinned memory won't be used.
+  super().__init__(loader)
+======================================================================
+  MobileNetV3 Crop Disease Classifier — Training
+======================================================================
+  Device: mps
+  Batch size: 32
+  Stage 1: 5 epochs, LR=0.001
+  Stage 2: 15 epochs, LR=3e-05
+
+[1/4] Loading dataset...
+Saved 15 class labels to /Users/naiteekpapriwal/SIH_Agriculture_project/edge-ai/models/class_labels.json
+Classes: 15
+Train: 16504 | Val: 2064 | Test: 2070
+  Classes: 15
+
+[2/4] Building MobileNetV3-Large model...
+  Total params: 3,221,823 | Trainable: 3,221,823
+
+[3/4] Stage 1 — Training classifier head (backbone frozen)...
+  Trainable params (head only): 249,871
+    Batch 50/515 — Loss: 1.2396 | Acc: 48.94%
+    Batch 100/515 — Loss: 0.7630 | Acc: 60.94%
+    Batch 150/515 — Loss: 0.7342 | Acc: 66.31%
+    Batch 200/515 — Loss: 0.5363 | Acc: 69.78%
+    Batch 250/515 — Loss: 0.6295 | Acc: 72.04%
+    Batch 300/515 — Loss: 0.1729 | Acc: 73.78%
+    Batch 350/515 — Loss: 0.4825 | Acc: 75.27%
+    Batch 400/515 — Loss: 0.4809 | Acc: 76.23%
+    Batch 450/515 — Loss: 0.3016 | Acc: 77.24%
+    Batch 500/515 — Loss: 0.4205 | Acc: 78.15%
+  [Stage 1 — Head] Epoch 1/5 (74.6s) | LR: 1.00e-03 | Train Loss: 0.7108 Acc: 78.42% | Val Loss: 0.3496 Acc: 89.24%
+    ✓ Saved best checkpoint (val_loss: 0.3496)
+    Batch 50/515 — Loss: 0.6683 | Acc: 87.56%
+    Batch 100/515 — Loss: 0.4059 | Acc: 87.03%
+    Batch 150/515 — Loss: 0.3678 | Acc: 87.21%
+    Batch 200/515 — Loss: 0.2357 | Acc: 87.69%
+    Batch 250/515 — Loss: 0.5177 | Acc: 87.69%
+    Batch 300/515 — Loss: 0.3112 | Acc: 87.79%
+    Batch 350/515 — Loss: 0.3815 | Acc: 88.04%
+    Batch 400/515 — Loss: 0.3960 | Acc: 88.11%
+    Batch 450/515 — Loss: 0.2989 | Acc: 88.21%
+    Batch 500/515 — Loss: 0.2036 | Acc: 88.19%
+  [Stage 1 — Head] Epoch 2/5 (70.6s) | LR: 1.00e-03 | Train Loss: 0.3576 Acc: 88.20% | Val Loss: 0.2699 Acc: 91.52%
+    ✓ Saved best checkpoint (val_loss: 0.2699)
+    Batch 50/515 — Loss: 0.2498 | Acc: 90.19%
+    Batch 100/515 — Loss: 0.1733 | Acc: 90.19%
+    Batch 150/515 — Loss: 0.3679 | Acc: 89.96%
+    Batch 200/515 — Loss: 0.0663 | Acc: 89.98%
+    Batch 250/515 — Loss: 0.2997 | Acc: 90.19%
+    Batch 300/515 — Loss: 0.3753 | Acc: 90.09%
+    Batch 350/515 — Loss: 0.5402 | Acc: 90.07%
+    Batch 400/515 — Loss: 0.3994 | Acc: 89.98%
+    Batch 450/515 — Loss: 0.2852 | Acc: 89.89%
+    Batch 500/515 — Loss: 0.2522 | Acc: 89.86%
+  [Stage 1 — Head] Epoch 3/5 (70.6s) | LR: 1.00e-03 | Train Loss: 0.3056 Acc: 89.82% | Val Loss: 0.2386 Acc: 92.25%
+    ✓ Saved best checkpoint (val_loss: 0.2386)
+    Batch 50/515 — Loss: 0.3182 | Acc: 89.81%
+    Batch 100/515 — Loss: 0.2237 | Acc: 90.25%
+    Batch 150/515 — Loss: 0.5323 | Acc: 90.15%
+    Batch 200/515 — Loss: 0.3166 | Acc: 90.19%
+    Batch 250/515 — Loss: 0.2153 | Acc: 90.31%
+    Batch 300/515 — Loss: 0.2240 | Acc: 90.44%
+    Batch 350/515 — Loss: 0.3581 | Acc: 90.63%
+    Batch 400/515 — Loss: 0.4397 | Acc: 90.66%
+    Batch 450/515 — Loss: 0.1517 | Acc: 90.62%
+    Batch 500/515 — Loss: 0.2747 | Acc: 90.69%
+  [Stage 1 — Head] Epoch 4/5 (70.4s) | LR: 1.00e-03 | Train Loss: 0.2725 Acc: 90.68% | Val Loss: 0.2457 Acc: 91.38%
+    Batch 50/515 — Loss: 0.1843 | Acc: 91.69%
+    Batch 100/515 — Loss: 0.2173 | Acc: 91.28%
+    Batch 150/515 — Loss: 0.3820 | Acc: 90.85%
+    Batch 200/515 — Loss: 0.2041 | Acc: 90.88%
+    Batch 250/515 — Loss: 0.2217 | Acc: 90.72%
+    Batch 300/515 — Loss: 0.2367 | Acc: 90.75%
+    Batch 350/515 — Loss: 0.2080 | Acc: 90.79%
+    Batch 400/515 — Loss: 0.3606 | Acc: 90.80%
+    Batch 450/515 — Loss: 0.1944 | Acc: 90.81%
+    Batch 500/515 — Loss: 0.1256 | Acc: 90.88%
+  [Stage 1 — Head] Epoch 5/5 (70.1s) | LR: 1.00e-03 | Train Loss: 0.2611 Acc: 90.92% | Val Loss: 0.2112 Acc: 92.73%
+    ✓ Saved best checkpoint (val_loss: 0.2112)
+
+[4/4] Stage 2 — Fine-tuning (unfreezing top 50% of backbone)...
+  Trainable params (partial unfreeze): 3,128,623
+    Batch 50/515 — Loss: 0.2560 | Acc: 91.38%
+    Batch 100/515 — Loss: 0.1489 | Acc: 92.25%
+    Batch 150/515 — Loss: 0.1776 | Acc: 92.65%
+    Batch 200/515 — Loss: 0.0607 | Acc: 93.30%
+    Batch 250/515 — Loss: 0.1129 | Acc: 93.44%
+    Batch 300/515 — Loss: 0.0936 | Acc: 93.75%
+    Batch 350/515 — Loss: 0.1076 | Acc: 94.03%
+    Batch 400/515 — Loss: 0.0362 | Acc: 94.30%
+    Batch 450/515 — Loss: 0.2032 | Acc: 94.42%
+    Batch 500/515 — Loss: 0.1147 | Acc: 94.61%
+  [Stage 2 — Fine-tune] Epoch 1/15 (117.5s) | LR: 2.97e-05 | Train Loss: 0.1585 Acc: 94.65% | Val Loss: 0.0991 Acc: 96.75%
+    ✓ Saved best checkpoint (val_loss: 0.0991)
+    Batch 50/515 — Loss: 0.0409 | Acc: 96.06%
+    Batch 100/515 — Loss: 0.2190 | Acc: 96.56%
+    Batch 150/515 — Loss: 0.0271 | Acc: 96.46%
+    Batch 200/515 — Loss: 0.1027 | Acc: 96.53%
+    Batch 250/515 — Loss: 0.1540 | Acc: 96.45%
+    Batch 300/515 — Loss: 0.1549 | Acc: 96.47%
+    Batch 350/515 — Loss: 0.0723 | Acc: 96.32%
+    Batch 400/515 — Loss: 0.2641 | Acc: 96.36%
+    Batch 450/515 — Loss: 0.1034 | Acc: 96.44%
+    Batch 500/515 — Loss: 0.1122 | Acc: 96.54%
+  [Stage 2 — Fine-tune] Epoch 2/15 (121.4s) | LR: 2.87e-05 | Train Loss: 0.1045 Acc: 96.55% | Val Loss: 0.0835 Acc: 97.24%
+    ✓ Saved best checkpoint (val_loss: 0.0835)
+    Batch 50/515 — Loss: 0.0086 | Acc: 97.12%
+    Batch 100/515 — Loss: 0.0282 | Acc: 97.00%
+    Batch 150/515 — Loss: 0.4259 | Acc: 97.06%
+    Batch 200/515 — Loss: 0.2362 | Acc: 97.02%
+    Batch 250/515 — Loss: 0.1855 | Acc: 97.09%
+    Batch 300/515 — Loss: 0.1266 | Acc: 97.21%
+    Batch 350/515 — Loss: 0.0287 | Acc: 97.24%
+    Batch 400/515 — Loss: 0.0900 | Acc: 97.26%
+    Batch 450/515 — Loss: 0.2665 | Acc: 97.28%
+    Batch 500/515 — Loss: 0.1216 | Acc: 97.35%
+  [Stage 2 — Fine-tune] Epoch 3/15 (2581.6s) | LR: 2.72e-05 | Train Loss: 0.0781 Acc: 97.38% | Val Loss: 0.0763 Acc: 97.63%
+    ✓ Saved best checkpoint (val_loss: 0.0763)
+    Batch 50/515 — Loss: 0.0354 | Acc: 97.75%
+    Batch 100/515 — Loss: 0.0466 | Acc: 97.94%
+    Batch 150/515 — Loss: 0.0330 | Acc: 97.65%
+    Batch 200/515 — Loss: 0.1250 | Acc: 97.61%
+    Batch 250/515 — Loss: 0.0395 | Acc: 97.72%
+    Batch 300/515 — Loss: 0.0559 | Acc: 97.77%
+    Batch 350/515 — Loss: 0.0539 | Acc: 97.83%
+    Batch 400/515 — Loss: 0.0308 | Acc: 97.88%
+    Batch 450/515 — Loss: 0.0056 | Acc: 97.90%
+    Batch 500/515 — Loss: 0.0701 | Acc: 97.88%
+  [Stage 2 — Fine-tune] Epoch 4/15 (2363.3s) | LR: 2.52e-05 | Train Loss: 0.0599 Acc: 97.91% | Val Loss: 0.0656 Acc: 97.92%
+    ✓ Saved best checkpoint (val_loss: 0.0656)
+    Batch 50/515 — Loss: 0.1191 | Acc: 97.94%
+    Batch 100/515 — Loss: 0.0337 | Acc: 97.69%
+    Batch 150/515 — Loss: 0.0282 | Acc: 97.85%
+    Batch 200/515 — Loss: 0.0107 | Acc: 97.95%
+    Batch 250/515 — Loss: 0.0608 | Acc: 97.96%
+    Batch 300/515 — Loss: 0.0258 | Acc: 98.09%
+    Batch 350/515 — Loss: 0.0195 | Acc: 98.09%
+    Batch 400/515 — Loss: 0.1641 | Acc: 98.11%
+    Batch 450/515 — Loss: 0.0614 | Acc: 98.12%
+    Batch 500/515 — Loss: 0.0071 | Acc: 98.12%
+  [Stage 2 — Fine-tune] Epoch 5/15 (1085.4s) | LR: 2.28e-05 | Train Loss: 0.0537 Acc: 98.12% | Val Loss: 0.0585 Acc: 98.21%
+    ✓ Saved best checkpoint (val_loss: 0.0585)
+    Batch 50/515 — Loss: 0.0414 | Acc: 98.50%
+    Batch 100/515 — Loss: 0.0171 | Acc: 98.53%
+    Batch 150/515 — Loss: 0.2353 | Acc: 98.42%
+    Batch 200/515 — Loss: 0.1259 | Acc: 98.41%
+    Batch 250/515 — Loss: 0.0241 | Acc: 98.41%
+    Batch 300/515 — Loss: 0.2553 | Acc: 98.41%
+    Batch 350/515 — Loss: 0.0045 | Acc: 98.45%
+    Batch 400/515 — Loss: 0.0163 | Acc: 98.46%
+    Batch 450/515 — Loss: 0.0365 | Acc: 98.47%
+    Batch 500/515 — Loss: 0.0068 | Acc: 98.50%
+  [Stage 2 — Fine-tune] Epoch 6/15 (186.5s) | LR: 2.00e-05 | Train Loss: 0.0447 Acc: 98.51% | Val Loss: 0.0556 Acc: 98.30%
+    ✓ Saved best checkpoint (val_loss: 0.0556)
+    Batch 50/515 — Loss: 0.1798 | Acc: 98.38%
+    Batch 100/515 — Loss: 0.0220 | Acc: 98.59%
+    Batch 150/515 — Loss: 0.0065 | Acc: 98.44%
+    Batch 200/515 — Loss: 0.0025 | Acc: 98.39%
+    Batch 250/515 — Loss: 0.0838 | Acc: 98.38%
+    Batch 300/515 — Loss: 0.0578 | Acc: 98.39%
+    Batch 350/515 — Loss: 0.0655 | Acc: 98.43%
+    Batch 400/515 — Loss: 0.0865 | Acc: 98.47%
+    Batch 450/515 — Loss: 0.1319 | Acc: 98.51%
+    Batch 500/515 — Loss: 0.1457 | Acc: 98.53%
+  [Stage 2 — Fine-tune] Epoch 7/15 (190.1s) | LR: 1.70e-05 | Train Loss: 0.0431 Acc: 98.53% | Val Loss: 0.0506 Acc: 98.55%
+    ✓ Saved best checkpoint (val_loss: 0.0506)
+    Batch 50/515 — Loss: 0.0056 | Acc: 98.69%
+    Batch 100/515 — Loss: 0.0986 | Acc: 98.78%
+    Batch 150/515 — Loss: 0.0298 | Acc: 98.88%
+    Batch 200/515 — Loss: 0.0162 | Acc: 98.81%
+    Batch 250/515 — Loss: 0.2087 | Acc: 98.78%
+    Batch 300/515 — Loss: 0.0127 | Acc: 98.78%
+    Batch 350/515 — Loss: 0.1006 | Acc: 98.69%
+    Batch 400/515 — Loss: 0.0053 | Acc: 98.69%
+    Batch 450/515 — Loss: 0.0181 | Acc: 98.69%
+    Batch 500/515 — Loss: 0.0149 | Acc: 98.70%
+  [Stage 2 — Fine-tune] Epoch 8/15 (191.6s) | LR: 1.40e-05 | Train Loss: 0.0352 Acc: 98.73% | Val Loss: 0.0454 Acc: 98.59%
+    ✓ Saved best checkpoint (val_loss: 0.0454)
+    Batch 50/515 — Loss: 0.0048 | Acc: 99.00%
+    Batch 100/515 — Loss: 0.0182 | Acc: 98.78%
+    Batch 150/515 — Loss: 0.0209 | Acc: 98.83%
+    Batch 200/515 — Loss: 0.0154 | Acc: 98.92%
+    Batch 250/515 — Loss: 0.0095 | Acc: 98.94%
+    Batch 300/515 — Loss: 0.2411 | Acc: 98.89%
+    Batch 350/515 — Loss: 0.0087 | Acc: 98.93%
+    Batch 400/515 — Loss: 0.0174 | Acc: 98.88%
+    Batch 450/515 — Loss: 0.1470 | Acc: 98.86%
+    Batch 500/515 — Loss: 0.0455 | Acc: 98.87%
+  [Stage 2 — Fine-tune] Epoch 9/15 (191.5s) | LR: 1.10e-05 | Train Loss: 0.0331 Acc: 98.88% | Val Loss: 0.0454 Acc: 98.59%
+    ✓ Saved best checkpoint (val_loss: 0.0454)
+    Batch 50/515 — Loss: 0.0148 | Acc: 98.94%
+    Batch 100/515 — Loss: 0.0553 | Acc: 98.97%
+    Batch 150/515 — Loss: 0.0007 | Acc: 99.06%
+    Batch 200/515 — Loss: 0.0306 | Acc: 98.84%
+    Batch 250/515 — Loss: 0.0199 | Acc: 98.89%
+    Batch 300/515 — Loss: 0.0009 | Acc: 98.92%
+    Batch 350/515 — Loss: 0.0059 | Acc: 98.95%
+    Batch 400/515 — Loss: 0.0053 | Acc: 98.95%
+    Batch 450/515 — Loss: 0.1246 | Acc: 99.00%
+    Batch 500/515 — Loss: 0.0016 | Acc: 99.02%
+  [Stage 2 — Fine-tune] Epoch 10/15 (190.7s) | LR: 8.25e-06 | Train Loss: 0.0288 Acc: 99.03% | Val Loss: 0.0444 Acc: 98.84%
+    ✓ Saved best checkpoint (val_loss: 0.0444)
+    Batch 50/515 — Loss: 0.0980 | Acc: 99.00%
+    Batch 100/515 — Loss: 0.0029 | Acc: 99.09%
+    Batch 150/515 — Loss: 0.0016 | Acc: 99.15%
+    Batch 200/515 — Loss: 0.0593 | Acc: 99.06%
+    Batch 250/515 — Loss: 0.0741 | Acc: 99.14%
+    Batch 300/515 — Loss: 0.0169 | Acc: 99.12%
+    Batch 350/515 — Loss: 0.0068 | Acc: 99.20%
+    Batch 400/515 — Loss: 0.0013 | Acc: 99.21%
+    Batch 450/515 — Loss: 0.0051 | Acc: 99.23%
+    Batch 500/515 — Loss: 0.0510 | Acc: 99.18%
+  [Stage 2 — Fine-tune] Epoch 11/15 (188.6s) | LR: 5.80e-06 | Train Loss: 0.0255 Acc: 99.19% | Val Loss: 0.0428 Acc: 98.84%
+    ✓ Saved best checkpoint (val_loss: 0.0428)
+    Batch 50/515 — Loss: 0.0147 | Acc: 99.38%
+    Batch 100/515 — Loss: 0.0519 | Acc: 99.12%
+    Batch 150/515 — Loss: 0.1145 | Acc: 99.21%
+    Batch 200/515 — Loss: 0.0016 | Acc: 99.14%
+    Batch 250/515 — Loss: 0.0073 | Acc: 99.08%
+    Batch 300/515 — Loss: 0.0189 | Acc: 99.10%
+    Batch 350/515 — Loss: 0.0530 | Acc: 99.14%
+    Batch 400/515 — Loss: 0.0035 | Acc: 99.15%
+    Batch 450/515 — Loss: 0.0119 | Acc: 99.04%
+    Batch 500/515 — Loss: 0.0288 | Acc: 99.06%
+  [Stage 2 — Fine-tune] Epoch 12/15 (188.4s) | LR: 3.77e-06 | Train Loss: 0.0273 Acc: 99.08% | Val Loss: 0.0433 Acc: 98.64%
+    Batch 50/515 — Loss: 0.0049 | Acc: 99.12%
+    Batch 100/515 — Loss: 0.0509 | Acc: 99.06%
+    Batch 150/515 — Loss: 0.0844 | Acc: 99.06%
+    Batch 200/515 — Loss: 0.0108 | Acc: 99.17%
+    Batch 250/515 — Loss: 0.1069 | Acc: 99.12%
+    Batch 300/515 — Loss: 0.0032 | Acc: 99.18%
+    Batch 350/515 — Loss: 0.0847 | Acc: 99.17%
+    Batch 400/515 — Loss: 0.0127 | Acc: 99.15%
+    Batch 450/515 — Loss: 0.0159 | Acc: 99.16%
+    Batch 500/515 — Loss: 0.0220 | Acc: 99.16%
+  [Stage 2 — Fine-tune] Epoch 13/15 (178.1s) | LR: 2.25e-06 | Train Loss: 0.0246 Acc: 99.16% | Val Loss: 0.0430 Acc: 98.79%
+    Batch 50/515 — Loss: 0.0143 | Acc: 99.06%
+    Batch 100/515 — Loss: 0.0011 | Acc: 99.12%
+    Batch 150/515 — Loss: 0.0133 | Acc: 99.27%
+    Batch 200/515 — Loss: 0.0088 | Acc: 99.30%
+    Batch 250/515 — Loss: 0.0641 | Acc: 99.29%
+    Batch 300/515 — Loss: 0.0847 | Acc: 99.24%
+    Batch 350/515 — Loss: 0.0278 | Acc: 99.22%
+    Batch 400/515 — Loss: 0.0194 | Acc: 99.22%
+    Batch 450/515 — Loss: 0.0010 | Acc: 99.22%
+    Batch 500/515 — Loss: 0.0105 | Acc: 99.22%
+  [Stage 2 — Fine-tune] Epoch 14/15 (175.1s) | LR: 1.32e-06 | Train Loss: 0.0235 Acc: 99.24% | Val Loss: 0.0423 Acc: 98.74%
+    ✓ Saved best checkpoint (val_loss: 0.0423)
+    Batch 50/515 — Loss: 0.0108 | Acc: 99.25%
+    Batch 100/515 — Loss: 0.0285 | Acc: 99.28%
+    Batch 150/515 — Loss: 0.0008 | Acc: 99.27%
+    Batch 200/515 — Loss: 0.0084 | Acc: 99.09%
+    Batch 250/515 — Loss: 0.0117 | Acc: 99.17%
+    Batch 300/515 — Loss: 0.0988 | Acc: 99.12%
+    Batch 350/515 — Loss: 0.0064 | Acc: 99.12%
+    Batch 400/515 — Loss: 0.0277 | Acc: 99.11%
+    Batch 450/515 — Loss: 0.0006 | Acc: 99.13%
+    Batch 500/515 — Loss: 0.0075 | Acc: 99.12%
+  [Stage 2 — Fine-tune] Epoch 15/15 (180.0s) | LR: 1.00e-06 | Train Loss: 0.0276 Acc: 99.10% | Val Loss: 0.0416 Acc: 98.79%
+    ✓ Saved best checkpoint (val_loss: 0.0416)
+
+======================================================================
+  Final Evaluation on Test Set
+======================================================================
+  Loaded best checkpoint from Stage 2 — Fine-tune epoch 15
+  Test Loss: 0.0218 | Test Accuracy: 99.13%
+
+  Checkpoint saved to: /Users/naiteekpapriwal/SIH_Agriculture_project/edge-ai/models/mobilenetv3_crop_disease.pth
+  Class labels saved to: /Users/naiteekpapriwal/SIH_Agriculture_project/edge-ai/models/class_labels.json
+  Training complete!
