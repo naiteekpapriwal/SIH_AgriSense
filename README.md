@@ -1,41 +1,41 @@
-# 🌾 AgriSense: Smart Farming Assistant
+# AgriSense: Smart Farming Assistant
 
-AgriSense is an end-to-end Edge AI and IoT platform built to empower farmers with real-time crop disease detection and intelligent irrigation advisories. By running high-accuracy machine learning models on low-power edge devices, AgriSense operates effectively even in areas with limited internet connectivity, pushing critical alerts to a centralized cloud dashboard.
+AgriSense is an Edge AI and IoT platform built for real-time crop disease detection and irrigation monitoring. By running machine learning models on edge devices, the system operates effectively in areas with limited internet connectivity and pushes alerts to a centralized cloud dashboard.
 
-## 🚀 Key Features
+## Key Features
 
-### 1. Edge AI Crop Disease Detection (The 'Eyes')
+### 1. Edge AI Crop Disease Detection
 - Uses computer vision on edge cameras to automatically detect crop diseases in the field.
-- Operates offline, saving bandwidth and providing instant alerts.
-- Highly optimized for cheap, low-power microcomputers (like Raspberry Pi).
+- Operates offline to save bandwidth and provide instant alerts.
+- Optimized to run on low-power microcomputers like the Raspberry Pi.
 
-### 2. Smart Irrigation & Sensor Engine (The 'Brain')
-- Ingests real-time IoT telemetry data including Soil Moisture, Temperature, and Humidity.
-- An intelligent decision engine evaluates complex environmental conditions (e.g., low moisture + high heat) to trigger **CRITICAL**, **HIGH**, or **LOW** severity irrigation and heat stress alerts.
+### 2. Smart Irrigation & Sensor Engine
+- Ingests real-time IoT telemetry data including soil moisture, temperature, and humidity.
+- The decision engine evaluates environmental conditions (e.g., low moisture and high heat) to trigger critical, high, or low severity irrigation and heat stress alerts.
 
-### 3. Real-time Farmer Dashboard (The 'Interface')
-- A sleek, premium dark-mode web application built with **Next.js** and **Tailwind CSS**.
-- Powered by **Supabase** WebSockets for instant, real-time UI updates without page refreshes.
+### 3. Real-time Dashboard
+- A web application built with Next.js and Tailwind CSS.
+- Uses Supabase WebSockets for real-time UI updates without page refreshes.
 - Features live sensor charts, a crop diagnostics feed, and active farm condition alerts.
 
 ---
 
-## 🧠 Machine Learning Models
+## Machine Learning Models
 
-We built and trained custom AI models from scratch to ensure maximum accuracy and edge compatibility:
+We trained custom AI models to ensure accuracy and edge compatibility:
 
 - **Model Architecture**: MobileNetV3-Large (Transfer Learning)
 - **Dataset**: PlantVillage (15 distinct crop conditions/diseases)
-- **Final Test Accuracy**: **99.13%**
-- **Edge Optimization**: The PyTorch model was compressed and exported to **ONNX** format.
+- **Final Test Accuracy**: 99.13%
+- **Edge Optimization**: The PyTorch model was exported to ONNX format.
   - **Size**: 0.33 MB
   - **Inference Speed**: ~3.7ms per image (CPU)
 
-*(A secondary DINOv2 feature extraction pipeline is also available in the codebase for research comparisons).*
+*(A secondary DINOv2 feature extraction pipeline is also available in the codebase).*
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```text
 SIH_Agriculture_project/
