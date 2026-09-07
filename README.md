@@ -7,7 +7,7 @@ AgriSense is an Edge AI and IoT platform built for real-time crop disease detect
 ### 1. Edge AI Crop Disease Detection
 - Uses computer vision on edge cameras to automatically detect crop diseases in the field.
 - Operates offline to save bandwidth and provide instant alerts.
-- Optimized to run on low-power microcomputers like the Raspberry Pi.
+- Optimized to run on low-power edge devices and microcomputers.
 
 ### 2. Smart Irrigation & Sensor Engine
 - Ingests real-time IoT telemetry data including soil moisture, temperature, and humidity.
